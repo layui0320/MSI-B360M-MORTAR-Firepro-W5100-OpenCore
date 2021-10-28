@@ -14,8 +14,8 @@
 | 硬盘 | 三星 | 970evo 250G |
 | 网卡 | 博通 | BCM94360CS2 |
 | 显示器 |明基 | BenQ EW3270U 4k60hz 	|
-| OS |	macOS BigSur 11.6 |
-| OpenCorePkg | 0.7.3 |
+| OS |	macOS Monterey 12.0.1 |
+| OpenCorePkg | 0.7.4 |
 
 
 
