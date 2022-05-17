@@ -37,13 +37,20 @@
 
 
 # 使用方法
+> 保留啰嗦模式以便排查问题。
 
-下载整包后，使用 Clover Configurator v2.49.0.1（其他工具亦可）选择iMac19,1机型生成新的`三码` + `ROM`。
+下载整包后，使用 Clover Configurator 选择iMac19,1机型生成新的`三码` + `ROM`。
 如果用 ProperTree 打开`/EFI/OC/config.plist`文件，填入到 `PlatformInfo` -> `Generic` 位置中
 
 如果开机画面大小有问题的用工具更改`NVRAM`->`4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14`->`UIScale`的值由`01`改为`02`即可，我设置成02的开机画面会变大，改01就正常了。
 
-为方便修改信息附上OCC软件，使用时记得偏好设置一下版本属性，否则可能会报错！
+如果开机跑码会在
+```
+‹Notice>: Doing boot task: cache-start
+‹Notice>: Doing boot task: bootroot 
+```
+卡半分钟左右，将config.plist中`SetApfsTrimTimeout`的值`-1`更改为`0`即可解决。
+
 
 
 
