@@ -1,8 +1,9 @@
 # MSI-B360M-MORTAR-Firepro-W5100-OpenCore
 
+## 因更换rx550显卡，此项目今日起不再维护。22.5.19
+
 
 > 此项目efi基于：https://github.com/SuperNG6/MSI-B360-Big-Sur-EFI  AMD GPU+IGPU修改适配 AMD Firepro W5100 
-
 
 
 # 硬件介绍
@@ -42,9 +43,9 @@
 下载整包后，使用 Clover Configurator 选择iMac19,1机型生成新的`三码` + `ROM`。
 如果用 ProperTree 打开`/EFI/OC/config.plist`文件，填入到 `PlatformInfo` -> `Generic` 位置中
 
-如果开机画面大小有问题的用工具更改`NVRAM`->`4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14`->`UIScale`的值由`01`改为`02`即可，我设置成02的开机画面会变大，改01就正常了。
+开机黑屏等待休眠后唤醒正常的，可以试试在`NVRAM`-`Add`-`7C436110-AB2A-4BBB-A880-FE41995C9F82`-`boot-args`添加`-igfxblr`参数能不能解决
 
-如果开机跑码会在
+开机跑码如果在
 ```
 ‹Notice>: Doing boot task: cache-start
 ‹Notice>: Doing boot task: bootroot 

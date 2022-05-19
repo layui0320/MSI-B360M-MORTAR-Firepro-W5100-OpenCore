@@ -260,12 +260,6 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>device-id</key>
-				<data>XGY=</data>
-				<key>no-gfx-spoof</key>
-				<data>AQAAAA==</data>
-				<key>model</key>
-				<string>AMD Radeon HD 7790</string>
 				<key>ATY,DeviceName</key>
 				<string>7790</string>
 				<key>ATY,EFIVersion</key>
@@ -276,6 +270,12 @@
 				<string>Radeon HD</string>
 				<key>ATY,Rom#</key>
 				<string>113-C5870301-100</string>
+				<key>device-id</key>
+				<data>XGY=</data>
+				<key>model</key>
+				<string>AMD Radeon HD 7790</string>
+				<key>no-gfx-spoof</key>
+				<data>AQAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
@@ -886,14 +886,11 @@
 		<key>Add</key>
 		<dict>
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
-			<dict>
-				<key>UIScale</key>
-				<data>AQ==</data>
-			</dict>
+			<dict/>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-v -igfxblr darkwake=0 shikigva=64 igfxrpsc=1</string>
+				<string>-v darkwake=0 shikigva=64 igfxrpsc=1</string>
 				<key>bootercfg</key>
 				<string>log=0 debug=0 level=0</string>
 				<key>csr-active-config</key>
